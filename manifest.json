@@ -1,0 +1,49 @@
+{
+  "name": "test-pwa-andres-carrasquero",
+  "short_name": "test-pwa",
+  "description": "This is a technical test related with PWA applications",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./assets/checkbox-empty.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/checkbox.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/delete.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/notes-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/send-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots":[
+    {
+      "src": "./assets/screenshots/screenshot1.png",
+      "sizes": "1915x923",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/screenshots/screenshot2.png",
+      "sizes": "323x696",
+      "type": "image/png"
+    }
+  ]
+}

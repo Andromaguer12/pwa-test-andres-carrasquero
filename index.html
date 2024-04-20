@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/mainStyles.css" />
+  <link rel="manifest" href="./manifest.json" />
+  <title>Andres To Do's</title>
+  <script>
+    if("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <nav>
+      <div class="maxContainer">
+        <div class="iconAndName">
+          <img src="./assets/notes-icon.png" alt="notes-icon" width="35px" height="35px" />
+          <h1>Andres To Do's</h1>
+        </div>
+
+        <button onclick="main()" class="buttonCreate">
+          Crear Nota
+        </button>
+      </div>
+    </nav>
+    <div id="notes-container" class="container">
+    </div>
+    <div class="enternote">
+      <form id="note-form" class="maxContainer" style="width: 100%">
+        <input id="note-input" type="text" placeholder="Escribe una nota" class="note-input" name="note" />
+        <button type="submit" class="buttonSendNote">
+          <img class="iconButton" src="./assets/send-icon.png" alt="send-note-icon" width="20px" height="20px" />
+        </button>
+      </form>
+    </div>
+  </main>
+  <script src="./js/mainJavascript.js"></script>
+</body>
+</html>

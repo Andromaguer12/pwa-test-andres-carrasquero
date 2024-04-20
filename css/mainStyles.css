@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+* {
+  margin:  0;
+  padding:  0;
+  box-sizing:  border-box;
+}
+body {
+  background:  #fff;
+  background-image: linear-gradient(to bottom, #9FFADC, #6392d3);
+  font-family: "Nunito",  sans-serif;
+  font-size:  1rem;
+}
+main {
+  margin:  auto;
+  text-align:  center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #7a7a7a7a;
+}
+ul {
+  list-style:  none;
+  display:  flex;
+}
+li {
+  margin-right:  1rem;
+}
+h1 {
+  color:  #FFF;
+  margin: 0 10px;
+}
+
+.maxContainer{ 
+  display:  flex;
+  justify-content:  space-between;
+  align-items:  center;
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+}
+
+.iconAndName{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonCreate {
+  padding: 7px 10px;
+  display: flex;
+  border-radius: 7px;
+  background-color: #6392d3;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+
+.enternote{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #7a7a7a7a;
+}
+
+.note-input{
+  width: calc(95% - 40px);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.buttonSendNote {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  outline: none;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  scrollbar-width: none;
+  padding: 20px 0;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.note {
+  width: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.note-text {
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-text-main {
+  width: 100%;
+  text-align: left;
+}
+
+.note-text-main-line {
+  width: 100%;
+  text-align: left;
+  text-decoration: line-through;
+}
+
+.note-date {
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.noteControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+}
+
+.iconButton{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .enternote {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  nav {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
